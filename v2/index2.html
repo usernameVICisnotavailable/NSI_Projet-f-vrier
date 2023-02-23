@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+<body>
+
+    <div class="bandeau">
+        <div class="titre_page">
+            <h1>La Voie des MP3</h1>
+        </div>
+        <div class="rechercher_titre">
+            <form action="resultat" method="post">
+                <input type="text" name="recherche" id="barre_recherche" value="Rechercher un titre"/>
+                <input type="submit" value="🔍" id="bouton_recherche"/>
+            </form>
+        </div>
+        <div class="profil">
+            <img class="profil" src="https://miro.medium.com/max/1200/1*_iikfMGYF3RH4OZ0yeQYnQ.png">
+            <!--Je pensais utiliser "www.thispersondoesnotexist.com/Image" (qui génère des visages) mais le site est en ce moment hors service-->
+        </div>
+    </div>
+    <div class="corps">
+        <div class="trackinfos">
+            <div id="titre">
+                Nom de la musique
+            </div>
+            <div id="lien">
+                <a id="urlmp3">lien_de_la_musique.mp3</a>
+            </div>
+            <div id="commentaires">
+                <div id="nouveau_commentaire">
+                    <form action="resultat" method="post">
+                        <input type="text" name="nouveau_commentaire" id="barre_commentaire" value="Ajouter un commentaire (max 350 caracères)"/>
+                        <input type="submit" value="Enregistrer" id="bouton_commentaire"/>
+                    </form>
+                </div>
+                <div id="anciens_commentaires">
+                    <div id="titre_liste_commentaires">
+                        <h5>Commentaires d'autres utilisateurs :</h5>
+                    </div>
+                    <div id="commentlist">
+                        <div class="comment">
+                            On affiche ici le texte renvoyé par le serveur
+                        </div>
+                        <div class="comment">
+                            C'est le serveur qui gère combien de div sont affichées
+                        </div>
+                        <div class="comment">
+                            Ceci est un long commentaire, on peut ainsi voir qu'il ne dépasse pas grâce à "overflow : auto" qui à été inscrit dans le fichier CSS ! Mais attendez je viens de me rendre compte qu'il n'est pas assez long pour pouvoir mettre en vigueur cette prouesse ! Quel dommage ... Enfin maintenant ça dervait être bon je crois ! Même pas !!! Cest divisions sont 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tracks">
+            <div class="banniere">
+                <h3>Liste des .mp3</h3>
+            </div>
+            <div id="tracklist">
+                <!--Les id sont donnée en fonction de l'ordre de rangement dans le dossier (ordre alphabétique)-->
+                <!--Les div track sont affichées dans l'ordre croissant du nombre d'avis positifs-->
+                <!--Toutes les informations spécifiques seront donc fournies par le serveur (y compris la photo de l'artiste s'il y en à une)-->
+                <div class="track" id="1">
+                    <div id="trackpicture">
+                        <img src="D:\caillasse\Documents\Lycee\NSI\Projet_fevrier\hors_ligne\V1\meta\img32.jpg">
+                    </div>
+                    <div id="artisteinfos">
+                        <p id="nom_musique">Blue In Green</p>
+                        <p id="nom_artiste">Miles Davis</p>
+                    </div>
+                </div>
+                <div class="track" id="0">
+                    <div id="trackpicture">
+                        <img src="D:\caillasse\Documents\Lycee\NSI\Projet_fevrier\hors_ligne\V1\meta\VinyleIcon.png">
+                    </div>
+                    <div id="artisteinfos">
+                        <p id="nom_musique">Autre musique</p>
+                        <p id="nom_artiste">Autre artiste</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
