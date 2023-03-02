@@ -27,3 +27,11 @@ VLP : Premiers pas avec le serveur en flask : tests et appropriation du notebook
         Le volet de gauche avec les commentaires et le lien du mp3 n'est pas encore fonctionnel, il faut le relier avec le serveur et un fichier javascript qui                 détecterait lorsque l'utilisateur clique sur une <div class='tracks'>. Je me suis dit que peut-être qu'on pourrait ne pas le faire et afficher directement          le lien du fichier .mp3 dans la <div class='tracks'>
         La photo de profil est maintenant de service : elle change à chaque fois qu'on recharge la page, ainsi que le nom.   
                                                                                 (25/02 : 21h30-->1H20, 26/02 : 13h30-->16h50/20h00-->00h10,27/02 : 21h30 --> 00h50)
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                        
+                                           
+CMZ : recherches sur le fonctionnement de flask, rattrapage des cours manqués à cause de l'échange, notamment grâce au notebook( 22/02: 14h-->18h).
+
