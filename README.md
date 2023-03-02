@@ -34,4 +34,5 @@ VLP : Premiers pas avec le serveur en flask : tests et appropriation du notebook
                                                         
                                            
 CMZ : recherches sur le fonctionnement de flask, rattrapage des cours manqués à cause de l'échange, notamment grâce au notebook( 22/02: 14h-->18h).
+j'ai installé VScode, étudié le code commencé par Victor. pb, je n'arrives pas à afficher la page wb avec un moteur de recherche. (27/02: 14h30-->16h30).
 
