@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>Accueil</title>
+</head>
+<body>
+
+    <div class="bandeau">
+        <div class="titre_page">
+            <h1>La Voie des MP3</h1>
+        </div>
+        <div class="rechercher_titre">
+            <form action="{{ url_for('index') }}" method="post">
+                <input type="text" name="recherche" id="barre_recherche" placeholder="Rechercher un titre"/>
+                <input type="submit" value="🔍" id="bouton_recherche"/>
+            </form>
+        </div>
+        <div class="profil">
+            <p class="profil">Bonjour <br> {{nom_profil}}</p>
+            <img class="profil" src="https://source.unsplash.com/random/200x200?face">
+            <!--Je pensais utiliser "www.thispersondoesnotexist.com/Image" (qui génère des visages) mais le site est en ce moment hors service-->
+        </div>
+    </div>
+    <div class="corps">
+        <div class="comments">
+            <div id="titre_comments">
+                Laisser un commentaire
+            </div>
+            <div id="remerciements">
+                <a id="urlmp3">... positif bien sûr !</a>
+            </div>
+            <div id="commentaires">
+                <div id="nouveau_commentaire">
+                    <form action="{{ url_for('index') }}" method="post">
+                        <input type="text" name="nouveau_commentaire" id="barre_commentaire" placeholder="Ajouter un commentaire (max. 350 carac)" maxlength="350"/>
+                        <input type="submit" value="Enregistrer" id="bouton_commentaire"/>
+                    </form>
+                </div>
+                <div id="anciens_commentaires">
+                    <div id="titre_liste_commentaires">
+                        <h5>Commentaires d'autres utilisateurs :</h5>
+                    </div>
+                    <div id="commentlist">
+                        {{ commentlist|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tracks">
+            <div class="banniere">
+                <h3>Liste des musiques : cliquer sur l'image pour ouvrir</h3>
+            </div>
+            <div id="tracklist">
+                {{ trackdiv_list|safe }}
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
