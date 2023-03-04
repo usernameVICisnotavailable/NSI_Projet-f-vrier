@@ -36,3 +36,4 @@ VLP : Premiers pas avec le serveur en flask : tests et appropriation du notebook
 CMZ : recherches sur le fonctionnement de flask, rattrapage des cours manqués à cause de l'échange, notamment grâce au notebook( 22/02: 14h-->18h).
 j'ai installé VScode, étudié le code commencé par Victor. pb, je n'arrives pas à afficher la page wb avec un moteur de recherche. (27/02: 14h30-->16h30).
 
+VLP & CMZ : Ajout des noms dans les commentaires, Amélioration du visuel des div 'track', cliquer sur l'image de vinyle mène au fichier, lors de la recherche d'un titre, les résultats s'affiche sans tenir compte de la mise en majuscule de certaines lettres (10h00 --> 15h00 + 47 minutes)
